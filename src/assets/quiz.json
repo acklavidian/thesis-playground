@@ -1,0 +1,252 @@
+{
+    "page_title": "Ruti",
+    "logo_path": "global/logo.svg",
+    "hide_progress_bar": true,
+  
+    "redirectURL": {
+      "style": {
+        "Casual": "https://ruti.com/pages/type-casual",
+        "Dressy": "https://ruti.com/pages/type-dressy",
+        "Cool / Edgy": "https://ruti.com/pages/type-edgy",
+        "Office": "https://ruti.com/pages/type-office"
+      },
+      "outfit1": [
+        {
+          "id": "4483923640425",
+          "name": "darwin-lace-up-top"
+        },
+        {
+          "id": "4451430170729",
+          "name": "cinder-cotton-twill-quartz-wide-leg-pants"
+        }
+      ],
+      "outfit2": [
+        {
+          "id": "4483941138537",
+          "name": "courtney-pleated-back-dress"
+        }
+      ],
+      "outfit3": [
+        {
+          "id": "4483715530857",
+          "name": "printed-hamsa-t-shirt"
+        },
+        {
+          "id": "4451429515369",
+          "name": "shadow-grey-aviv-drape-maxi-skirt"
+        }
+      ],
+      "outfit4": [
+        {
+          "id": "4549553487977",
+          "name": "lorelai-printed-silk-blouse"
+        },
+        {
+          "id": "4451428958313",
+          "name": "black-textured-gemini-relaxed-fit-pants"
+        }
+      ]
+    },
+  
+    "sequences": [
+      {
+        "order": 1,
+        "id": "style",
+        "questions": [
+          {
+            "type": "imagechoice",
+            "next_step_copy": "Next",
+            "title": "Which best describes your typical&nbsp;style?",
+            "choices": [
+              {
+                "image": "quiz/casual.jpg",
+                "text": "Casual"
+              },
+              {
+                "image": "quiz/dressy.jpg",
+                "text": "Dressy"
+              },
+              {
+                "image": "quiz/cool.jpg",
+                "text": "Cool / Edgy"
+              },
+              {
+                "image": "quiz/office.jpg",
+                "text": "Office"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "order": 2,
+        "id": "outfit1",
+        "questions": [
+          {
+            "type": "basechoice",
+            "classes": "image-question-override",
+            "image": "quiz/dress1.jpg",
+            "title": "Could you see yourself wearingnbsp;this?",
+            "choices": [
+              {
+                "text": "Yes"
+              },
+              {
+                "text": "No"
+              },
+              {
+                "text": "Maybe"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "order": 3,
+        "id": "outfit2",
+        "questions": [
+          {
+            "type": "basechoice",
+            "classes": "image-question-override",
+            "image": "quiz/dress2.jpg",
+            "title": "Could you see yourself wearing this?",
+            "choices": [
+              {
+                "text": "Yes"
+              },
+              {
+                "text": "No"
+              },
+              {
+                "text": "Maybe"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "order": 4,
+        "id": "outfit3",
+        "questions": [
+          {
+            "type": "basechoice",
+            "classes": "image-question-override",
+            "image": "quiz/dress3.jpg",
+            "title": "Could you see yourself wearing this?",
+            "choices": [
+              {
+                "text": "Yes"
+              },
+              {
+                "text": "No"
+              },
+              {
+                "text": "Maybe"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "order": 5,
+        "id": "outfit4",
+        "questions": [
+          {
+            "type": "basechoice",
+            "classes": "image-question-override",
+            "image": "quiz/dress4.jpg",
+            "title": "Could you see yourself wearing this?",
+            "choices": [
+              {
+                "text": "Yes"
+              },
+              {
+                "text": "No"
+              },
+              {
+                "text": "Maybe"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "order": 6,
+        "id": "body",
+        "questions": [
+          {
+            "type": "imagechoice",
+            "next_step_copy": "Next",
+            "title": "How would you describe your body&nbsp;type?",
+            "choices": [
+              {
+                "text": "Triangle",
+                "image": "quiz/triangle.jpg"
+              },
+              {
+                "text": "Hourglass",
+                "image": "quiz/hourglass.jpg"
+              },
+              {
+                "text": "Rectangle",
+                "image": "quiz/rectangle.jpg"
+              },
+              {
+                "text": "Inverted Triangle",
+                "image": "quiz/inverted-triangle.jpg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "order": 7,
+        "id": "height",
+        "questions": [
+          {
+            "type": "basechoice",
+            "next_step_copy": "Next",
+            "title": "How would you describe your&nbsp;height?",
+            "choices": [
+              {
+                "text": "Petite"
+              },
+              {
+                "text": "Average"
+              },
+              {
+                "text": "Tall"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "order": 8,
+        "id": "size",
+        "questions": [
+          {
+            "type": "dropdowninput",
+            "title": "What is your typical&nbsp;size?",
+            "dropdownQuestions": [
+              {
+                "text": "Shirt size (US)",
+                "placeholder": "Select",
+                "selections": ["2", "4", "6", "8", "10", "12", "14", "16"]
+              },
+              {
+                "text": "Pant size (US)",
+                "placeholder": "Select",
+                "selections": ["2", "4", "6", "8", "10", "12", "14", "16"]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+  
+    "results": {
+      "delay": false,
+      "redirect_delay": 2000
+    }
+  }
